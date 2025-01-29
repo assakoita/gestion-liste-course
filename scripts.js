@@ -2,12 +2,10 @@ function addItem(name, quantity) {
     items.push({ name, quantity, purchased: false });
     updateList();
 }
-
-
-
-
-
-
+function deleteItem(index) {
+    items.splice(index, 1);
+    updateList();
+}
 
 
 
