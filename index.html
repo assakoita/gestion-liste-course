@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Listes de Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion de Liste de Course</h1>
+    </header>
+    <main>
+        <section id="add-item">
+            <h2>Ajouter un article</h2>
+            <form id="add-item-form">
+                <input type="text" id="item-name" placeholder="Nom de l'article" required>
+                <input type="number" id="item-quantity" placeholder="Quantité" min="1" required>
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
+        <section id="item-list">
+            <h2>Liste des articles</h2>
+            <ul id="list"></ul>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
